@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book | Laviya Studios</title>
+    <meta name="description" content="Request a booking for Laviya Studios creative space.">
+    <link rel="preload" href="assets/laviya-logo-ivory.svg" as="image">
+    <link rel="preload" href="assets/studio-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Laviya Studios home">
+        <img src="assets/laviya-logo-ivory.svg" alt="Laviya Studios">
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="services.html">Services</a>
+        <a href="space.html">Space</a>
+        <a href="book.html" aria-current="page">Book</a>
+        <a href="blog.html">Journal</a>
+      </nav>
+      <a class="header-action" href="book.html">Check dates</a>
+    </header>
+
+    <main id="top">
+      <section class="page-hero">
+        <p class="eyebrow">Book the studio</p>
+        <h1>Send a booking request for your next session.</h1>
+        <p>Select your preferred date, time, session type and creative add-ons. We will review the request and come back to you.</p>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div class="booking-intro">
+          <p class="eyebrow">Booking request</p>
+          <h2>Reserve the space for your next session.</h2>
+          <p>Select your session type and preferred time. You will get a clear request summary before sending.</p>
+          <div class="rate-strip" aria-label="Starting rates">
+            <span><strong>£65</strong>/hour</span>
+            <span><strong>£220</strong>/half day</span>
+            <span><strong>£390</strong>/full day</span>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+          <div class="field span-2">
+            <label for="sessionType">Session type</label>
+            <select id="sessionType" name="sessionType" required>
+              <option value="">Choose one</option>
+              <option>Studio hire only</option>
+              <option>Photography session</option>
+              <option>Videography session</option>
+              <option>Podcast recording</option>
+              <option>Newborn photography</option>
+              <option>Couple photography</option>
+              <option>Fashion photography</option>
+              <option>Bespoke creative content</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="date">Preferred date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+
+          <div class="field">
+            <label for="time">Start time</label>
+            <input id="time" name="time" type="time" required>
+          </div>
+
+          <div class="field">
+            <label for="duration">Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Choose duration</option>
+              <option value="2">2 hours</option>
+              <option value="3">3 hours</option>
+              <option value="4">Half day, 4 hours</option>
+              <option value="8">Full day, 8 hours</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="guests">People on set</label>
+            <input id="guests" name="guests" type="number" min="1" max="20" value="2" required>
+          </div>
+
+          <fieldset class="span-2 add-ons">
+            <legend>Add-ons</legend>
+            <label><input type="checkbox" name="addons" value="Photographer"> Photographer</label>
+            <label><input type="checkbox" name="addons" value="Videographer"> Videographer</label>
+            <label><input type="checkbox" name="addons" value="Podcast engineer"> Podcast engineer</label>
+            <label><input type="checkbox" name="addons" value="Styling support"> Styling support</label>
+          </fieldset>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="field span-2">
+            <label for="notes">Creative brief</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Tell us about the shoot, mood, content goals, props, ages for newborn sessions, or anything we should prepare."></textarea>
+          </div>
+
+          <div class="booking-footer span-2">
+            <p id="estimate">Select a duration to see the studio hire estimate.</p>
+            <button class="button primary" type="submit">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg>
+              Prepare booking request
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="confirmation" id="confirmation" hidden>
+        <div>
+          <p class="eyebrow">Ready to send</p>
+          <h2 id="confirmationTitle">Your request is prepared.</h2>
+          <p id="summaryText"></p>
+        </div>
+        <a class="button primary" id="emailLink" href="#">Send enquiry</a>
+      </section>
+    </main>
+
+    <footer>
+      <span class="footer-brand"><img src="assets/laviya-logo-ivory.svg" alt="Laviya Studios"></span>
+      <a href="mailto:bookings@laviyastudios.com">bookings@laviyastudios.com</a>
+      <span>London creative studio</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

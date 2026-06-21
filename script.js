@@ -7,6 +7,10 @@ const confirmationTitle = document.querySelector("#confirmationTitle");
 const summaryText = document.querySelector("#summaryText");
 const emailLink = document.querySelector("#emailLink");
 
+if (!form) {
+  // Booking behaviour only runs on the booking page.
+} else {
+
 const hourlyRate = 65;
 const packageRates = {
   4: 220,
@@ -131,3 +135,5 @@ form.addEventListener("submit", async (event) => {
     setSubmitText(submitButton, originalButtonText);
   }
 });
+
+}
