@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210" role="img" aria-labelledby="title desc">
+  <title id="title">Laviya Studios logo</title>
+  <desc id="desc">A refined Laviya Studios wordmark in ivory with custom no-crossbar A letters.</desc>
+  <g fill="none" stroke="#f7f3ea" stroke-width="11" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M68 52v77h54" />
+    <path d="M162 129l32-77 32 77" />
+    <path d="M268 52l32 77 32-77" />
+    <path d="M376 52v77" />
+    <path d="M420 52l34 42 34-42M454 94v35" />
+    <path d="M530 129l32-77 32 77" />
+  </g>
+  <text
+    x="360"
+    y="174"
+    fill="#f7f3ea"
+    font-family="Helvetica Neue, Arial, sans-serif"
+    font-size="31"
+    font-weight="300"
+    letter-spacing="21"
+    text-anchor="middle">STUDIOS</text>
+</svg>

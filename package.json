@@ -1,0 +1,13 @@
+{
+  "name": "laviya-studios-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Laviya Studios website with booking backend and admin CRM.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
